@@ -34,9 +34,8 @@ gulp.task('js', function() {
         .pipe(uglify({
             preserveComments: 'license'
         }))
-        .pipe(rename({suffix: '.min'}))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./jquery.fullpage.min.js'));
 });
 
 gulp.task('default', ['css', 'js']);

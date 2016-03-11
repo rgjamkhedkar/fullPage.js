@@ -1527,7 +1527,7 @@
         * Lazy loads image, video and audio elements.
         */
         function lazyLoad(destiny){
-            var destiny = getSlideOrSection(destiny);
+            /*var destiny = getSlideOrSection(destiny);
 
             destiny.find('img[data-src], source[data-src], audio[data-src]').each(function(){
                 $(this).attr('src', $(this).data('src'));
@@ -1536,7 +1536,7 @@
                 if($(this).is('source')){
                     $(this).closest('video').get(0).load();
                 }
-            });
+            });*/
         }
 
         /**
